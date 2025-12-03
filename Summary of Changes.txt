@@ -1,0 +1,19 @@
+Summary of Changes
+1.   Global Variables: Added score, lives, and game_speed_ms.
+
+2.   Main Loop Condition: Changed while (1) to while (lives > 0).
+
+3.   Display: Added printf("SCORE: %d | LIVES: %d\n", score, lives); to display the stats.
+
+4.   Score Increment: Added score += 10; inside the if (step > 10) block, rewarding the player for successfully dodging an obstacle.
+
+5.   Difficulty Scaling: Added logic inside the loop to decrease game_speed_ms (making the game faster) when the score reaches 100 and 300.
+
+
+6.  Collision Handling:
+
+--Replaced the instant break; with a call to handle_collision_impact().
+
+--The handle_collision_impact() function decrements lives, handles the sound, and only leads to a permanent end when lives reaches zero.
+
+7.   Sleep Time: The Sleep(120); call is replaced with Sleep(game_speed_ms); to enable dynamic difficulty.
