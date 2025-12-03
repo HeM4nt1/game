@@ -1,0 +1,8 @@
+ANALYSIS OF THE GAME:
+this is a console based 3 lane obstacle game written in c for windows. the player moves left and right to avoid failing obstacles.
+
+LIMITATIONS OF THE GAME:
+No scoring system.
+No player lives.
+Fixed speed(no difficulty).
+game ends after first collision.
